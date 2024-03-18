@@ -1,0 +1,53 @@
+{
+  "name": "nexcss",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.0.0-alpha.4",
+    "@heroicons/react": "^2.1.1",
+    "class-variance-authority": "^0.7.0",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.0.6",
+    "gsap": "^3.12.5",
+    "heroicons": "^2.1.1",
+    "mongodb": "^6.3.0",
+    "next": "14.1.0",
+    "prettier": "^3.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "sass": "^1.71.1",
+    "tailwind-scrollbar": "^3.1.0",
+    "yup": "^1.3.3"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/nextjs": "^7.6.17",
+    "@storybook/react": "^7.6.17",
+    "@storybook/test": "^7.6.17",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "postcss": "^8.4.35",
+    "storybook": "^7.6.17",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
