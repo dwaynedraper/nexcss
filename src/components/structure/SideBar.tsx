@@ -5,6 +5,10 @@ import React from "react";
 
 // Other imports
 
-export default function SideBar() {
-  return <aside>SideBar</aside>;
+interface SideBarProps {
+  className?: string;
+}
+
+export default function SideBar({ className }: SideBarProps) {
+  return <aside className={`${className}`}>SideBar</aside>;
 }

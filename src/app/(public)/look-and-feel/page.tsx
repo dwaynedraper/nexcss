@@ -1,93 +1,94 @@
 import React from "react";
 
-const LookAndFeelPage = () => {
+// Look and feel is a page that is only used for testing. Its purpose is to put one of each of the most common HTML elements on the page. The global styles from /src/app/globals.scss are applied to this page. It allows a user to quickly come up with good default values for most of the necessary core elements. It should include headings, paragraphs, lists, links, buttons, forms, and form input elements.
+
+export default function LookAndFeel() {
   return (
-    <section>
-      <h1 className="text-9xl font-gray-800">Look and Feel</h1>
-
-      <h2>Headings</h2>
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-
-      <h2>Paragraphs</h2>
-      <p>
-        This is a paragraph with some <strong>bold text</strong> and some{" "}
-        <em>italic text</em>. It also includes a <a href="#">link</a>.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
-        nibh sit amet mauris tincidunt, a facilisis magna luctus.
-      </p>
-
-      <h2>Lists</h2>
-      <h3>Unordered List</h3>
-      <ul>
-        <li>List Item 1</li>
-        <li>List Item 2</li>
-        <li>List Item 3</li>
-      </ul>
-
-      <h3>Ordered List</h3>
-      <ol>
-        <li>List Item 1</li>
-        <li>List Item 2</li>
-        <li>List Item 3</li>
-      </ol>
-
-      <h2>Forms</h2>
-      <form className="flex flex-col">
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" />
-
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" />
-
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-
-      <h2>Tables</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John Doe</td>
-            <td>32</td>
-            <td>New York</td>
-          </tr>
-          <tr>
-            <td>Jane Smith</td>
-            <td>28</td>
-            <td>Los Angeles</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2>Images</h2>
-      <img src="/placeholder.jpg" alt="Placeholder Image" />
-
-      <h2>Code Blocks</h2>
-      <pre>
-        <code>
-          function greet(name) {`{`}
-          console.log(&apos;Hello, &apos; + name + &apos;!&apos;);
-          {`}`}
-        </code>
-      </pre>
-    </section>
+    <div className="lookAndFeel">
+      <section>
+        <h1>Look and Feel</h1>
+        <h3>This page is only used for testing.</h3>
+      </section>
+      <section>
+        <h2 className="text-blue-800">Headings</h2>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </section>
+      <section>
+        <h2 className="text-blue-800">Paragraphs</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam
+          lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam
+          viverra nec consectetur ante hendrerit. Donec et mollis dolor.
+          Praesent et diam eget libero egestas mattis sit amet vitae augue . Nam
+          tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut
+          libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis
+          felis, pulvinar a semper sed, adipiscing id dolor.
+        </p>
+      </section>
+      <section>
+        <h2 className="text-blue-800">Lists</h2>
+        <ul>
+          <li>
+            List Item 1 - Lorem ipsum dolor sit amet bacon sausage links double
+            dip vanilla taters waffles hamburger cola Lorem ipsum dolor sit amet
+            bacon sausage links double dip vanilla taters waffles hamburger cola
+            Lorem ipsum dolor sit amet bacon sausage links double dip vanilla
+            taters waffles hamburger cola Lorem ipsum dolor sit amet bacon
+            sausage links double dip vanilla taters waffles hamburger cola
+          </li>
+          <li>
+            List Item 2 - Lorem ipsum dolor sit amet bacon sausage links double
+            dip vanilla taters waffles hamburger cola Lorem ipsum dolor sit amet
+            bacon sausage links double dip vanilla taters waffles hamburger cola
+            Lorem ipsum dolor sit amet bacon sausage links double dip vanilla
+            taters waffles hamburger cola Lorem ipsum dolor sit amet bacon
+            sausage links double dip vanilla taters waffles hamburger cola
+          </li>
+          <li>
+            List Item 3 - Lorem ipsum dolor sit amet bacon sausage links double
+            dip vanilla taters waffles hamburger cola Lorem ipsum dolor sit amet
+            bacon sausage links double dip vanilla taters waffles hamburger cola
+            Lorem ipsum dolor sit amet bacon sausage links double dip vanilla
+            taters waffles hamburger cola Lorem ipsum dolor sit amet bacon
+            sausage links double dip vanilla taters waffles hamburger cola
+          </li>
+        </ul>
+        <ol>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ol>
+      </section>
+      <section>
+        <h2 className="text-blue-800">Links</h2>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </section>
+      <section>
+        <h2 className="text-blue-800">Buttons</h2>
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+      </section>
+      <section>
+        <h2 className="text-blue-800">Forms</h2>
+        <form>
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" name="name" />
+          <label htmlFor="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message" />
+          <button>Submit</button>
+        </form>
+      </section>
+    </div>
   );
-};
-
-export default LookAndFeelPage;
+}

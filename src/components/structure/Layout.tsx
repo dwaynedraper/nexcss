@@ -18,9 +18,9 @@ export default function Layout({ children }: LayoutProps) {
     <>
       <Header />
       <section className="w-full flex container mx-auto">
-        <SideBar />
+        <SideBar className="hidden" />
         <main className="w-full">{children}</main>
-        <ChatBar />
+        <ChatBar className="hidden" />
       </section>
       <Footer />
     </>

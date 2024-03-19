@@ -5,6 +5,10 @@ import React from "react";
 
 // Other imports
 
-export default function ChatBar() {
-  return <section>Chat Bar</section>;
+interface ChatBarProps {
+  className?: string;
+}
+
+export default function ChatBar({ className }: ChatBarProps) {
+  return <section className={`${className}`}>Chat Bar</section>;
 }
