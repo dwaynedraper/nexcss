@@ -1,8 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500&family=Kaushan+Script&family=Love+Light&family=Manrope:wght@400;700&family=Merienda:wght@400;600;700&family=Quintessential&family=Satisfy&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --base-font-size: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  width: 100%;
+  z-index: -1;
+  @apply bg-gradient-to-br from-brand-200 via-brand-500 to-brand-200;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 // Add a custom className that Tailwind will treat as it would its own base styles
 @layer components {
   .hide-scrollbar::-webkit-scrollbar {
@@ -26,15 +60,18 @@
 //   }
 // }
 
-.gradientText {
-  @apply text-transparent bg-clip-text bg-gradient-to-r from-[#ff8e3d] to-[#ff1500];
+.gradient-text {
+  @apply text-transparent bg-clip-text bg-gradient-to-br from-primary via-[#00ff00] to-[#0000ff];
+}
+.gradient-nex-css {
+  @apply font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#ff00ff] to-[#0000ff];
 }
 
 /* Global Styles */
 body {
   @apply bg-white text-base text-gray-700 leading-normal;
-  * {
-    @apply rounded;
+  input, textarea, button, select {
+    @apply bg-blue-50 rounded;
   }
 }
 
@@ -99,5 +136,10 @@ input, textarea {
 }
 
 button {
-  @apply px-6 py-2 border border-gray-300 my-4 w-fit;
+  @apply px-6 py-2 my-4 w-fit;
+}
+
+// If multiple buttons are together, they will be spaced.
+div:has(> button:not(:only-child)) {
+  @apply flex gap-4;
 }

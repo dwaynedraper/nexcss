@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`mx-auto ${inter.className}`}>
+      <body className={`mx-auto font-montserrat text-brand-dark`}>
         <Layout>{children}</Layout>
       </body>
     </html>

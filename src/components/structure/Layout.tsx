@@ -17,10 +17,12 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Header />
-      <section className="w-full flex container mx-auto">
-        <SideBar className="hidden" />
-        <main className="w-full">{children}</main>
-        <ChatBar className="hidden" />
+      <section className="">
+        <div className="container flex w-full mx-auto">
+          <SideBar className="hidden" />
+          <main className="w-full">{children}</main>
+          <ChatBar className="hidden" />
+        </div>
       </section>
       <Footer />
     </>

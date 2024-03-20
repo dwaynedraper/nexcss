@@ -2,6 +2,8 @@ import React from "react";
 
 // Look and feel is a page that is only used for testing. Its purpose is to put one of each of the most common HTML elements on the page. The global styles from /src/app/globals.scss are applied to this page. It allows a user to quickly come up with good default values for most of the necessary core elements. It should include headings, paragraphs, lists, links, buttons, forms, and form input elements.
 
+// TODO: Restructure this page a little more thoughtfully, with layouts that are more realistic.
+
 export default function LookAndFeel() {
   return (
     <div className="lookAndFeel">
@@ -35,28 +37,22 @@ export default function LookAndFeel() {
         <h2 className="text-blue-800">Lists</h2>
         <ul>
           <li>
-            List Item 1 - Lorem ipsum dolor sit amet bacon sausage links double
-            dip vanilla taters waffles hamburger cola Lorem ipsum dolor sit amet
-            bacon sausage links double dip vanilla taters waffles hamburger cola
-            Lorem ipsum dolor sit amet bacon sausage links double dip vanilla
-            taters waffles hamburger cola Lorem ipsum dolor sit amet bacon
-            sausage links double dip vanilla taters waffles hamburger cola
+            List Item 1 - Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Repellendus distinctio veniam nemo nihil! Sapiente molestiae,
+            nihil sit voluptatibus, doloribus hic incidunt tempora dicta odio
+            saepe repudiandae, illum atque magni placeat.
           </li>
           <li>
-            List Item 2 - Lorem ipsum dolor sit amet bacon sausage links double
-            dip vanilla taters waffles hamburger cola Lorem ipsum dolor sit amet
-            bacon sausage links double dip vanilla taters waffles hamburger cola
-            Lorem ipsum dolor sit amet bacon sausage links double dip vanilla
-            taters waffles hamburger cola Lorem ipsum dolor sit amet bacon
-            sausage links double dip vanilla taters waffles hamburger cola
+            List Item 2 -Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quam qui impedit debitis, a dolorem ex iusto atque consequatur
+            beatae, animi repellat placeat rem perferendis temporibus, sapiente
+            blanditiis harum dolore minima!
           </li>
           <li>
-            List Item 3 - Lorem ipsum dolor sit amet bacon sausage links double
-            dip vanilla taters waffles hamburger cola Lorem ipsum dolor sit amet
-            bacon sausage links double dip vanilla taters waffles hamburger cola
-            Lorem ipsum dolor sit amet bacon sausage links double dip vanilla
-            taters waffles hamburger cola Lorem ipsum dolor sit amet bacon
-            sausage links double dip vanilla taters waffles hamburger cola
+            List Item 3 - Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Neque ea aliquam rerum libero iste eos quidem maiores numquam
+            incidunt laboriosam consectetur reprehenderit culpa quo fugiat, ex
+            quaerat, deserunt corporis quas!
           </li>
         </ul>
         <ol>
@@ -73,9 +69,11 @@ export default function LookAndFeel() {
       </section>
       <section>
         <h2 className="text-blue-800">Buttons</h2>
-        <button>Button 1</button>
-        <button>Button 2</button>
-        <button>Button 3</button>
+        <div>
+          <button>Button 1</button>
+          <button>Button 2</button>
+          <button>Button 3</button>
+        </div>
       </section>
       <section>
         <h2 className="text-blue-800">Forms</h2>
